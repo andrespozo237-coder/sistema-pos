@@ -14,4 +14,8 @@ if (!isset($_SESSION['usuario_activo'])) {
     ]);
     exit;
 }
+
+// IMPORTANTE: Liberar el bloqueo del archivo de sesión inmediatamente
+// para permitir solicitudes concurrentes (AJAX) sin cuellos de botella.
+session_write_close();
 ?>
