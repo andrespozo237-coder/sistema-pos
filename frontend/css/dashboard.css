@@ -1,0 +1,75 @@
+:root {
+    --verde-oscuro: #1B4332;
+    --verde-medio: #2d6a4f;
+    --verde-claro: #40916c;
+    --fondo-gris: #f4f6f9;
+}
+
+body {
+    background-color: var(--fondo-gris);
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/*Diseño del menu lateral*/
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--verde-oscuro);
+    transition: all 0.3s;
+    height: 100vh;
+    color: #fff;
+}
+
+#sidebar .siderbar-header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid var(--verde-medio);
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul p {
+    padding: 10px 0;
+    color: #fff;
+}
+
+#sidebar ul li a {
+    padding: 15px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: #d8f3dc;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+#sidebar ul li a:hover {
+    color: #d8f3dc;
+    background: var(--verde-medio);
+    border-left: 4px solid var(--verde-claro);
+}
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+btn-logout {
+    background-color: #ef233c;
+    color: white;
+}
+
+.menu-item {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 12px 20px;
+}
+
+.menu-item:hover {
+    background-color: var(--verde-medio);
+    color: #ffffff;
+    transform: translateX(5px);
+}
