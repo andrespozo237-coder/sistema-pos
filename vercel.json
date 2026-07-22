@@ -1,16 +1,16 @@
 {
   "builds": [
     {
-      "src": "api/index.php",
+      "src": "router.php",
       "use": "vercel-php@0.6.2",
       "config": {
-        "includeFiles": ["../**/**"]
+        "includeFiles": ["backend/**", "frontend/**", "*.php"]
       }
     }
   ],
   "routes": [
-    { "src": "/", "dest": "/api/index.php" },
-    { "src": "/(.*\\.php)$", "dest": "/api/index.php" },
+    { "src": "/", "dest": "/router.php" },
+    { "src": "/(.*\\.php)$", "dest": "/router.php" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }
