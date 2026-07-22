@@ -1,16 +1,10 @@
 {
   "builds": [
-    { "src": "index.php", "use": "vercel-php@0.6.2" },
-    { "src": "dashboard.php", "use": "vercel-php@0.6.2" },
-    { "src": "pos.php", "use": "vercel-php@0.6.2" },
-    { "src": "historial.php", "use": "vercel-php@0.6.2" },
-    { "src": "clientes.php", "use": "vercel-php@0.6.2" },
-    { "src": "catalogo.php", "use": "vercel-php@0.6.2" },
-    { "src": "backend/api_cliente.php", "use": "vercel-php@0.6.2" },
-    { "src": "backend/api_historial.php", "use": "vercel-php@0.6.2" },
-    { "src": "backend/api_producto.php", "use": "vercel-php@0.6.2" },
-    { "src": "backend/api_venta.php", "use": "vercel-php@0.6.2" },
-    { "src": "backend/logout.php", "use": "vercel-php@0.6.2" },
-    { "src": "backend/procesar_login.php", "use": "vercel-php@0.6.2" }
+    { "src": "router.php", "use": "vercel-php@0.6.2" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/router.php" },
+    { "src": "/(.*\\.php)", "dest": "/router.php" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
