@@ -4,8 +4,12 @@
       "src": "router.php",
       "use": "vercel-php@0.6.2",
       "config": {
-        "includeFiles": ["backend/**", "frontend/**", "*.php"]
+        "includeFiles": ["backend/**", "backend/includes/**", "*.php"]
       }
+    },
+    {
+      "src": "frontend/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
