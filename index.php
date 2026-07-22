@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/backend/session_handler.php';
 session_start();
 if (isset($_SESSION['usuario_activo'])) {
     header('Location: dashboard.php');
