@@ -10,9 +10,9 @@ const elTablaCount = document.getElementById('tabla-count');
 const elPaginacion = document.getElementById('paginacion-container');
 
 // Inicialización
-document.addEventListener('DOMContentLoaded', () => {
-    cargarClientes();
-    cargarStats();
+document.addEventListener('DOMContentLoaded', async () => {
+    await cargarClientes();
+    await cargarStats();
 
     // Búsqueda en vivo
     const inputBusqueda = document.getElementById('input-busqueda');
